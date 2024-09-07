@@ -30,8 +30,8 @@
 			<StackPanel Grid.Column="0" VerticalAlignment="Center" >
 				<Button x:Name="mathCalButton" Content="Math Calculator" FontSize="24" Margin="20" MinWidth="250" MinHeight="75" Foreground="White" Background="#FF6A5ACD" CornerRadius="15"/>
 				<Button x:Name="mortgageButton" Content="Mortgage Calculator" FontSize="24" Margin="20" MinWidth="250" MinHeight="75" Foreground="White" Background="#FF20B2AA" CornerRadius="15"/>
-				<Button x:Name="currencyButton" Content="Currency Calculator" FontSize="24" Margin="20" MinWidth="250" MinHeight="75" Foreground="White" Background="#FFBB092D" CornerRadius="15"/>
-				<Button x:Name="exitButton" Content="Exit" FontSize="24" Margin="20" MinWidth="250" MinHeight="75" Foreground="White" Background="#FF8B0000" CornerRadius="15"/>
+				<Button x:Name="currencyButton" Content="Currency Calculator" FontSize="24" Margin="20" MinWidth="250" MinHeight="75" Foreground="White" Background="#FFBB092D" CornerRadius="15" Click="currencyButton_Click"/>
+				<Button x:Name="exitButton" Content="Exit" FontSize="24" Margin="20" MinWidth="250" MinHeight="75" Foreground="White" Background="#FF8B0000" CornerRadius="15" Click="exitButton_Click"/>
 			</StackPanel>
 
 			<Border Grid.Column="1">

@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConversionCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+
+	<Grid Background="Tan">
+		<StackPanel>
+			<TextBlock x:Name="titleTextBlock" Text="Currency Conversion Calculator" FontSize="50" Margin="10" Foreground="BlueViolet" TextAlignment="Center"/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+				<StackPanel Margin="15">
+					<TextBlock x:Name="amountTextBlock" Text="Amount $" FontSize="30" Margin="10"/>
+					<TextBox x:Name="amountTextBox" PlaceholderText="100" Margin="10" MinWidth="200" TextAlignment="Center" FontSize="20" Height="50" BorderBrush="DarkOrange" BorderThickness="2" CornerRadius="10" />
+				</StackPanel>
+				<StackPanel Margin="15">
+					<TextBlock x:Name="fromTextBlock" Text="From" FontSize="30" Margin="10" />
+					<ComboBox x:Name="fromComBox" SelectedIndex="0" MinHeight="50" FontSize="15" Margin="10" BorderBrush="DarkOrange" BorderThickness="2" CornerRadius="10" HorizontalAlignment="Center" MinWidth="200">
+						<ComboBoxItem Content="USD - US Dollar" />
+						<ComboBoxItem Content="Euro"/>
+						<ComboBoxItem Content="GBP - British"/>
+						<ComboBoxItem Content="Rupees - Indian Rupee"/>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel Margin="15">
+					<TextBlock x:Name="toTextBlock" Text="To" FontSize="30" Margin="10" />
+					<ComboBox x:Name="toComBox" SelectedIndex="2" MinHeight="50" FontSize="15" Margin="10" BorderBrush="DarkOrange" BorderThickness="2" CornerRadius="10" 
+                                      HorizontalAlignment="Center" MinWidth="200" >
+						<x:String>USD - US Dollar</x:String>
+						<x:String>Euro</x:String>
+						<x:String>GBP - British</x:String>
+						<x:String>Ruppees - Indian Rupee</x:String>
+					</ComboBox>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Image x:Name="usaImage" Source="Images/USA1.PNG" Width="50" Height="30" Margin="5"/>
+				<Image x:Name="ukImage" Source="Images/UK1.PNG" Width="50" Height="30" Margin="5"/>
+				<Image x:Name="euroImage" Source="Images/EUR1.PNG" Width="50" Height="30" Margin="5"/>
+				<Image x:Name="indiaImage" Source="Images/India1.PNG" Width="50" Height="30" Margin="5"/>
+				<Image x:Name="exchangeImage" Source="Images/exchange.png" Width="50" Height="30" Margin="5"/>
+				<Image x:Name="usa1Image" Source="Images/USA1.PNG" Width="50" Height="30" Margin="5"/>
+				<Image x:Name="uk1Image" Source="Images/UK1.PNG" Width="50" Height="30" Margin="5"/>
+				<Image x:Name="euro1Image" Source="Images/EUR1.PNG" Width="50" Height="30" Margin="5"/>
+				<Image x:Name="india1Image" Source="Images/India1.PNG" Width="50" Height="30" Margin="5"/>
+			</StackPanel>
+			<StackPanel MinHeight="250">
+				<TextBlock x:Name="outputTextBlock" Text="" FontSize="30" Margin="10" TextAlignment="Center"/>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center">
+				<Button x:Name="currencyConversionButton" Content="Currency Conversion" Margin="10" FontSize="30" Background="AliceBlue" Foreground="Black" Click="currencyConversionButton_Click" BorderThickness="5" CornerRadius="10" BorderBrush="Orange"/>
+				<Button x:Name="exitButton" Content="Exit" Margin="10" FontSize="30" Background="AliceBlue" Foreground="Black" HorizontalAlignment="Center" Click="exitButton_Click" BorderThickness="5" CornerRadius="10" BorderBrush="Orange"/>
+			</StackPanel>
+		</StackPanel>
+
+    </Grid>
+</Page>
