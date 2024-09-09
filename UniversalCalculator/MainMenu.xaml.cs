@@ -26,13 +26,17 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+				private void currencyButton_Click(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(CurrencyConversionCalculator));
+		}
 
 		private void mortgageButton_Click(object sender, RoutedEventArgs e)
 		{
 			Frame.Navigate(typeof(MortgageCalculator));
 		}
 
-		private void exitButton_Click_1(object sender, RoutedEventArgs e)
+		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
 			Application.Current.Exit();
 		}
