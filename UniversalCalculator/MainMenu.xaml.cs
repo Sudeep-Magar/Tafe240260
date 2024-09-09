@@ -40,5 +40,10 @@ namespace Calculator
 		{
 			Application.Current.Exit();
 		}
+
+		private void mathCalButton_Click(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(MainPage));
+		}
 	}
 }
