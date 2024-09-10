@@ -26,7 +26,7 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
-				private void currencyButton_Click(object sender, RoutedEventArgs e)
+		private void currencyButton_Click(object sender, RoutedEventArgs e)
 		{
 			Frame.Navigate(typeof(CurrencyConversionCalculator));
 		}
@@ -44,6 +44,11 @@ namespace Calculator
 		private void mathCalButton_Click(object sender, RoutedEventArgs e)
 		{
 			Frame.Navigate(typeof(MainPage));
+		}
+
+		private void tripCalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			tripTextBlock.Text = "Trip calculator C# will be developed later.";
 		}
 	}
 }
